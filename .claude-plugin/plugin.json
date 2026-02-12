@@ -1,0 +1,5 @@
+{
+  "name": "claude-memory-editor",
+  "description": "Web-based markdown editor for Claude Code auto memory files with live preview, file tree, and search",
+  "version": "1.0.0"
+}

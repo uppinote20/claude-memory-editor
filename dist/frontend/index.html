@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Editor</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-left">
+        <h1 class="app-title">
+          <span class="title-icon">&#129504;</span>
+          Memory Editor
+        </h1>
+      </div>
+      <div class="header-center">
+        <div class="view-toggle">
+          <button class="view-btn" data-view="edit" title="Edit mode">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M11.5 1.5L14.5 4.5L5 14H2V11L11.5 1.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+            Edit
+          </button>
+          <button class="view-btn active" data-view="split" title="Split view">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <rect x="1" y="2" width="14" height="12" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="8" y1="2" x2="8" y2="14" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+            Split
+          </button>
+          <button class="view-btn" data-view="preview" title="Preview mode">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M8 3C4 3 1 8 1 8C1 8 4 13 8 13C12 13 15 8 15 8C15 8 12 3 8 3Z" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="8" cy="8" r="2.5" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+            Preview
+          </button>
+        </div>
+      </div>
+      <div class="header-right">
+        <button id="theme-toggle" class="icon-btn" title="Toggle theme">
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M8 1V3M8 13V15M1 8H3M13 8H15M3.05 3.05L4.46 4.46M11.54 11.54L12.95 12.95M3.05 12.95L4.46 11.54M11.54 4.46L12.95 3.05" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M13.5 8.5C13.5 12 11 14 7.5 14C4 14 1.5 11.5 1.5 8C1.5 4.5 4 2 7.5 2C6.5 4 7 7 9.5 9.5C11 11 13 11.5 13.5 8.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main layout -->
+    <div class="body">
+      <!-- Sidebar -->
+      <aside id="sidebar" class="sidebar"></aside>
+
+      <!-- Content area -->
+      <div id="main-content" class="main-content view-split">
+        <!-- Editor pane -->
+        <div id="editor-pane" class="pane editor-pane"></div>
+
+        <!-- Preview pane -->
+        <div id="preview-pane" class="pane preview-pane">
+          <div id="preview-content" class="preview-content markdown-body"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Status bar -->
+    <footer class="status-bar">
+      <div class="status-left">
+        <span id="status-text" class="">Ready</span>
+      </div>
+      <div class="status-center">
+        <span id="file-info">No file selected</span>
+      </div>
+      <div class="status-right">
+        <span id="line-count">Lines: 0</span>
+        <span class="status-separator">|</span>
+        <span id="port-info">Local</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/assets/app.js"></script>
+</body>
+</html>
