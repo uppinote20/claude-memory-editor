@@ -8,10 +8,10 @@ Stop the Memory Editor server running on port 3456.
 Run the following bash commands:
 
 ```bash
-PID=$(lsof -ti:3456 2>/dev/null)
-if [ -n "$PID" ]; then
-  kill $PID
-  echo "Memory Editor stopped (PID: $PID)"
+PIDS=$(lsof -ti:3456 2>/dev/null)
+if [ -n "$PIDS" ]; then
+  echo "$PIDS" | xargs kill
+  echo "Memory Editor stopped (PID: $PIDS)"
 else
   echo "Memory Editor is not running"
 fi
