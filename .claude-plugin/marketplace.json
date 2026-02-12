@@ -1,12 +1,25 @@
 {
-  "title": "Memory Editor",
-  "icon": "brain",
-  "category": "productivity",
-  "tags": [
-    "memory",
-    "editor",
-    "markdown"
+  "name": "claude-memory-editor",
+  "owner": {
+    "name": "uppinote",
+    "email": ""
+  },
+  "metadata": {
+    "description": "Web-based markdown editor for Claude Code auto memory files",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "claude-memory-editor",
+      "source": "./",
+      "description": "Web-based markdown editor for Claude Code auto memory files with live preview, file tree, search, and auto-save",
+      "category": "productivity",
+      "tags": [
+        "memory",
+        "editor",
+        "markdown"
+      ]
+    }
   ],
-  "author": "uppinote20",
   "version": "1.0.0"
 }
