@@ -1,5 +1,16 @@
 {
   "name": "claude-memory-editor",
+  "version": "1.0.0",
   "description": "Web-based markdown editor for Claude Code auto memory files with live preview, file tree, and search",
-  "version": "1.0.0"
+  "author": {
+    "name": "uppinote"
+  },
+  "repository": "https://github.com/uppinote20/claude-memory-editor",
+  "license": "MIT",
+  "keywords": [
+    "memory",
+    "editor",
+    "markdown",
+    "auto-save"
+  ]
 }
