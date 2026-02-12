@@ -1,6 +1,6 @@
 {
   "name": "claude-memory-editor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Web-based markdown editor for Claude Code auto memory files",
   "private": true,
   "type": "module",
