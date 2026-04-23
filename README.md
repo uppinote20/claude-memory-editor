@@ -1,5 +1,14 @@
 # claude-memory-editor
 
+> [!WARNING]
+> **This project has been superseded by [duru](https://github.com/uppinote20/duru) and is no longer maintained.**
+>
+> `duru` is a terminal UI (Rust) that covers the same memory-file browsing/editing workflow and adds live Claude Code session monitoring. It scans `~/.claude/` and displays all `CLAUDE.md` files and auto-memory across every project in a Miller Columns TUI. Editing is delegated to your `$EDITOR`.
+>
+> Install duru via Homebrew / Scoop / `cargo` / prebuilt binaries — see the [duru README](https://github.com/uppinote20/duru#install).
+>
+> This repository is archived as read-only. Existing installs will continue to work, but no further updates, bug fixes, or releases will be published here.
+
 ![License](https://img.shields.io/github/license/uppinote20/claude-memory-editor)
 ![Stars](https://img.shields.io/github/stars/uppinote20/claude-memory-editor)
 
